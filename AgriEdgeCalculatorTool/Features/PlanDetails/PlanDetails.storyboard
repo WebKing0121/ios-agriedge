@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sh4-Of-bM9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Plan-->
+        <scene sceneID="1kZ-YJ-gN5">
+            <objects>
+                <viewController title="New Plan" id="Sh4-Of-bM9" customClass="PulleyViewController" customModule="Pulley" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RBz-aR-Mqb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1dd-sp-qrS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="387"/>
+                                <connections>
+                                    <segue destination="GbH-ax-4Od" kind="embed" id="O8i-8x-uPL"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zba-0u-rb0">
+                                <rect key="frame" x="0.0" y="475" width="414" height="387"/>
+                                <connections>
+                                    <segue destination="rh5-c9-ZW1" kind="embed" id="iIg-4n-Br9"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="reb-9E-D08" firstAttribute="trailing" secondItem="1dd-sp-qrS" secondAttribute="trailing" id="APy-8f-Pxo"/>
+                            <constraint firstItem="reb-9E-D08" firstAttribute="trailing" secondItem="zba-0u-rb0" secondAttribute="trailing" id="D9m-nY-Pmb"/>
+                            <constraint firstItem="zba-0u-rb0" firstAttribute="leading" secondItem="reb-9E-D08" secondAttribute="leading" id="JIi-ff-I7X"/>
+                            <constraint firstItem="1dd-sp-qrS" firstAttribute="leading" secondItem="reb-9E-D08" secondAttribute="leading" id="LJB-dX-70t"/>
+                            <constraint firstItem="zba-0u-rb0" firstAttribute="top" secondItem="1dd-sp-qrS" secondAttribute="bottom" id="MVb-ve-omF"/>
+                            <constraint firstItem="zba-0u-rb0" firstAttribute="height" secondItem="1dd-sp-qrS" secondAttribute="height" id="P7J-xu-bbK"/>
+                            <constraint firstItem="zba-0u-rb0" firstAttribute="top" secondItem="1dd-sp-qrS" secondAttribute="bottom" id="U5c-lE-GkH"/>
+                            <constraint firstItem="reb-9E-D08" firstAttribute="bottom" secondItem="zba-0u-rb0" secondAttribute="bottom" id="pxw-au-ast"/>
+                            <constraint firstItem="1dd-sp-qrS" firstAttribute="top" secondItem="reb-9E-D08" secondAttribute="top" id="qAK-FR-hY6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="reb-9E-D08"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundDimmingColor">
+                            <color key="value" red="0.92549019610000005" green="0.23137254900000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="backgroundDimmingOpacity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="drawerContentContainerView" destination="zba-0u-rb0" id="F3f-f2-nu8"/>
+                        <outlet property="primaryContentContainerView" destination="1dd-sp-qrS" id="02Y-2t-1SC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2D-fN-Rhf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3655" y="11"/>
+        </scene>
+        <!--Plan Details View Controller-->
+        <scene sceneID="NOc-dh-cYv">
+            <objects>
+                <viewController id="GbH-ax-4Od" customClass="PlanDetailsViewController" customModule="AgriEdgeCalculatorTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="viZ-eD-FvL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1d-tb-CLq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eHu-XK-irY" appends="YES" id="1Kt-u3-SBV"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jui-dG-989" firstAttribute="trailing" secondItem="q1d-tb-CLq" secondAttribute="trailing" id="PjC-y2-cnf"/>
+                            <constraint firstItem="q1d-tb-CLq" firstAttribute="leading" secondItem="jui-dG-989" secondAttribute="leading" id="ajD-3a-hMV"/>
+                            <constraint firstItem="jui-dG-989" firstAttribute="bottom" secondItem="q1d-tb-CLq" secondAttribute="bottom" id="c6y-KA-egS"/>
+                            <constraint firstItem="q1d-tb-CLq" firstAttribute="top" secondItem="jui-dG-989" secondAttribute="top" id="dPE-r3-FX1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jui-dG-989"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="dimmingView" destination="q1d-tb-CLq" id="C6G-wT-PuR"/>
+                        <segue destination="rPP-8V-yNs" kind="presentation" identifier="ApplicationDetailsSegue" modalPresentationStyle="fullScreen" id="xQh-AE-fSs"/>
+                        <segue destination="vNq-8z-HuY" kind="presentation" identifier="SeedApplicationDetailsSegue" modalPresentationStyle="fullScreen" id="YHq-Vw-6Dr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3X-fz-be1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eHu-XK-irY">
+                    <connections>
+                        <action selector="tapDimmingView:" destination="GbH-ax-4Od" id="mZ6-ue-NSE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4416" y="10"/>
+        </scene>
+        <!--ApplicationDetails-->
+        <scene sceneID="KvX-oy-4hu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ApplicationDetails" id="rPP-8V-yNs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vSB-mj-O5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5041" y="9"/>
+        </scene>
+        <!--SeedApplicationDetails-->
+        <scene sceneID="5Te-xy-xZJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SeedApplicationDetails" id="vNq-8z-HuY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTK-E6-DWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5056" y="46"/>
+        </scene>
+        <!--Rebate-->
+        <scene sceneID="THa-0Z-nVa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rebate" id="rh5-c9-ZW1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjp-Ds-FHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3654" y="433"/>
+        </scene>
+    </scenes>
+</document>

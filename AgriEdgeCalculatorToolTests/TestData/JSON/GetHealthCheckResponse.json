@@ -1,0 +1,7 @@
+{
+    "message": "Success",
+    "data": {
+        "api": "RUNNING",
+        "db": "RUNNING"
+    }
+}

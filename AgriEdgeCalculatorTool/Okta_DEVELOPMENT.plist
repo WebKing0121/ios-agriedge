@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>issuer</key>
+	<string>https://auth.landdb.com/oauth2/auscm85nULtgvMzWV355</string>
+	<key>clientId</key>
+	<string>0oa3wslhk1IkWdX9j357</string>
+	<key>redirectUri</key>
+	<string>oob://localhost/ios-act-mobile</string>
+	<key>logoutRedirectUri</key>
+	<string>oob://localhost/ios-act-mobile</string>
+	<key>scopes</key>
+	<string>offline_access openid profile</string>
+	<key>URL Scheme</key>
+	<string>oob</string>
+</dict>
+</plist>

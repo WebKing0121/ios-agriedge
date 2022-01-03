@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LabeledTextFieldAccessoryTableViewCell" customModule="AgriEdgeCalculatorTool" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jZ0-K8-lVf">
+                        <rect key="frame" x="16" y="91" width="343" height="1"/>
+                        <color key="backgroundColor" name="cellSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="6Og-jc-lfW"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bf3-8F-RKl">
+                        <rect key="frame" x="16" y="16" width="177" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Af-Ey-0fl">
+                                <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="primaryInkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPW-uu-Ype">
+                                <rect key="frame" x="0.0" y="30" width="177" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="secondaryInkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pUl-Os-H6H" customClass="BorderedTextField" customModule="AgriEdgeCalculatorTool" customModuleProvider="target">
+                        <rect key="frame" x="209" y="28" width="150" height="36"/>
+                        <color key="backgroundColor" name="tableSectionHeaderBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="J1O-Qi-QnH"/>
+                        </constraints>
+                        <color key="textColor" name="primaryInkColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jZ0-K8-lVf" secondAttribute="bottom" id="40X-iG-fwM"/>
+                    <constraint firstItem="bf3-8F-RKl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="5L5-48-rvh"/>
+                    <constraint firstAttribute="trailing" secondItem="pUl-Os-H6H" secondAttribute="trailing" constant="16" id="Imx-Hg-VH0"/>
+                    <constraint firstItem="pUl-Os-H6H" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="NE5-u8-Ewh"/>
+                    <constraint firstItem="pUl-Os-H6H" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="40/100" id="U55-dv-XWk"/>
+                    <constraint firstItem="jZ0-K8-lVf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Ufn-Wl-YiC"/>
+                    <constraint firstItem="pUl-Os-H6H" firstAttribute="leading" secondItem="bf3-8F-RKl" secondAttribute="trailing" constant="16" id="aY0-w7-HY9"/>
+                    <constraint firstAttribute="bottom" secondItem="bf3-8F-RKl" secondAttribute="bottom" constant="16" id="afp-l1-CxM"/>
+                    <constraint firstAttribute="trailing" secondItem="jZ0-K8-lVf" secondAttribute="trailing" constant="16" id="hk2-kX-Bbr"/>
+                    <constraint firstItem="bf3-8F-RKl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="jgj-hL-fAn"/>
+                    <constraint firstItem="jZ0-K8-lVf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pUl-Os-H6H" secondAttribute="bottom" constant="16" id="jkN-Hc-kXt"/>
+                    <constraint firstItem="pUl-Os-H6H" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ovK-Ur-ZJD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="separatorView" destination="jZ0-K8-lVf" id="bQM-tv-Idi"/>
+                <outlet property="subtitleLabel" destination="WPW-uu-Ype" id="Mkf-D2-p1C"/>
+                <outlet property="textField" destination="pUl-Os-H6H" id="MPs-IS-nif"/>
+                <outlet property="titleLabel" destination="0Af-Ey-0fl" id="rjf-3l-FMJ"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="14"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="cellSeparatorColor">
+            <color red="0.875" green="0.88599997758865356" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryInkColor">
+            <color red="0.090196078431372548" green="0.10588235294117647" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryInkColor">
+            <color red="0.36078431372549019" green="0.396078431372549" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tableSectionHeaderBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

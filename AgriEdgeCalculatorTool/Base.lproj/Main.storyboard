@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Okta Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="OktaLoginViewController" customModule="AgriEdgeCalculatorTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agriedgeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="TGw-9y-09J">
+                                <rect key="frame" x="50" y="234" width="314" height="48"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator Tool" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="TeI-MA-d5Q">
+                                <rect key="frame" x="147.5" y="292" width="119.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" name="primaryInkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rQ-ua-y13" customClass="StyledButton" customModule="AgriEdgeCalculatorTool" customModuleProvider="target">
+                                <rect key="frame" x="16" y="806" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="47n-rn-geO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Log In with SSO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="interactiveLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOe-r9-geH"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="era-jo-OSZ">
+                                <rect key="frame" x="164" y="372.5" width="86.5" height="48"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="YkX-7l-xna">
+                                        <rect key="frame" x="33" y="0.0" width="20" height="20"/>
+                                        <color key="color" red="0.0" green="0.52549019610000003" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wm7-cm-X3V">
+                                        <rect key="frame" x="0.0" y="24" width="86.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.52549019610000003" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="era-jo-OSZ" firstAttribute="top" secondItem="TeI-MA-d5Q" secondAttribute="bottom" constant="60" id="0bE-fE-1NY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TGw-9y-09J" secondAttribute="trailing" constant="50" id="8pI-2n-B4h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5rQ-ua-y13" secondAttribute="bottom" constant="16" id="MYK-Bo-zmU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5rQ-ua-y13" secondAttribute="trailing" constant="16" id="Q4C-SJ-PWv"/>
+                            <constraint firstItem="TGw-9y-09J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="WEa-N5-nUJ"/>
+                            <constraint firstItem="TeI-MA-d5Q" firstAttribute="centerX" secondItem="TGw-9y-09J" secondAttribute="centerX" id="WX4-zC-Vep"/>
+                            <constraint firstItem="TeI-MA-d5Q" firstAttribute="top" secondItem="TGw-9y-09J" secondAttribute="bottom" constant="10" id="XOc-l2-f0P"/>
+                            <constraint firstItem="era-jo-OSZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cVZ-qG-qwQ"/>
+                            <constraint firstItem="TGw-9y-09J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="kW1-Xe-ait"/>
+                            <constraint firstItem="5rQ-ua-y13" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ziP-xJ-TKc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZRB-kk-kzf"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="era-jo-OSZ" id="wrL-aQ-4VJ"/>
+                        <outlet property="logInButton" destination="5rQ-ua-y13" id="990-on-Mre"/>
+                        <segue destination="f58-RL-Zxz" kind="presentation" identifier="showGrowersListSegue" modalPresentationStyle="fullScreen" id="jjX-dx-cAX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347.8260869565217" y="20.758928571428569"/>
+        </scene>
+        <!--GrowersList-->
+        <scene sceneID="gXW-OZ-GjL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GrowersList" id="f58-RL-Zxz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gLU-cw-pR2"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoM-EN-bY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2154.3478260869565" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="agriedgeLogo" width="281" height="48"/>
+        <namedColor name="primaryInkColor">
+            <color red="0.090196078431372548" green="0.10588235294117647" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

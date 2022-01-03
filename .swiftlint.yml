@@ -1,0 +1,31 @@
+# Run 'swiftlint rules' to print a list of all available rules
+
+disabled_rules:
+  - trailing_whitespace #warning: Lines should not have trailing whitespace
+  - type_body_length #error: Type Body Length Violation: Type body should span 350 lines or less excluding comments and whitespace
+  - file_length #error: File Line Length Violation: File should contain 400 lines or less
+  - function_body_length #warning: Function Body Length Violation: Function body should span 40 lines or less excluding comments and whitespace
+  - line_length #long lines  warning: Line Length Violation: Line should be 100 characters or less
+  - type_name #warning: Type Name Violation: Type name should be between 3 and 40 characters long
+  - identifier_name #warning Identifier Name Violation: Variable name should be between 3 and 40 characters long: 'x'
+  - todo #warning: Todo Violation: TODOs and FIXMEs should be avoided
+  - closure_parameter_position #warning: Closure parameters should be on the same line as opening brace
+  - vertical_parameter_alignment #warning: Function parameters should be aligned vertically if they're in multiple lines in a declaration
+  - cyclomatic_complexity #warning: Function should have complexity 10 or less
+  - large_tuple #warning Large Tuple Violation: Tuples should have at most 2 members
+
+opt_in_rules:
+  - operator_usage_whitespace #warning: Operators should be surrounded by a single whitespace when they are being used
+
+colon: 
+  flexible_right_spacing : false
+
+excluded:
+  - Pods
+
+force_cast: warning
+force_try: warning
+
+function_parameter_count: 
+  - 10 #warning count 
+  - 14 #error count

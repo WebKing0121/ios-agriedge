@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="m5Z-WQ-8kg" customClass="StyledButtonTableSectionHeader" customModule="Pods_SyngentaUIKit_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJE-Vt-hVE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                    <color key="backgroundColor" name="tableSectionHeaderBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNG-nd-d89" customClass="StyledButton" customModule="Pods_SyngentaUIKit_Example" customModuleProvider="target">
+                    <rect key="frame" x="16" y="16" width="343" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iCB-41-IcK"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="m5Z-WQ-8kg" eventType="touchUpInside" id="IFy-r8-pgr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="aJE-Vt-hVE" firstAttribute="leading" secondItem="m5Z-WQ-8kg" secondAttribute="leading" id="GYq-eK-3bt"/>
+                <constraint firstItem="yUq-Cd-RYB" firstAttribute="trailing" secondItem="zNG-nd-d89" secondAttribute="trailing" constant="16" id="Her-4L-rjB"/>
+                <constraint firstItem="zNG-nd-d89" firstAttribute="top" secondItem="m5Z-WQ-8kg" secondAttribute="top" constant="16" id="Hhh-Fe-yY8"/>
+                <constraint firstAttribute="trailing" secondItem="aJE-Vt-hVE" secondAttribute="trailing" id="Ro8-0e-wko"/>
+                <constraint firstAttribute="bottom" secondItem="zNG-nd-d89" secondAttribute="bottom" constant="16" id="Ser-sv-JGa"/>
+                <constraint firstAttribute="bottom" secondItem="aJE-Vt-hVE" secondAttribute="bottom" id="bA2-kj-jSB"/>
+                <constraint firstItem="aJE-Vt-hVE" firstAttribute="top" secondItem="m5Z-WQ-8kg" secondAttribute="top" id="r8g-rw-slB"/>
+                <constraint firstItem="zNG-nd-d89" firstAttribute="leading" secondItem="yUq-Cd-RYB" secondAttribute="leading" constant="16" id="ypQ-Wc-dav"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="yUq-Cd-RYB"/>
+            <connections>
+                <outlet property="background" destination="aJE-Vt-hVE" id="XNF-4O-IwK"/>
+                <outlet property="styledButton" destination="zNG-nd-d89" id="g1y-Al-LK5"/>
+            </connections>
+            <point key="canvasLocation" x="381" y="-18"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="tableSectionHeaderBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

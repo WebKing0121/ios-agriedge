@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (4.9.0)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - NewRelicAgent (6.11.0)
+  - OktaOidc (3.5.1)
+  - Pulley (2.9.1)
+  - ReachabilitySwift (4.3.1)
+  - Realm (3.18.0):
+    - Realm/Headers (= 3.18.0)
+  - Realm/Headers (3.18.0)
+  - RealmSwift (3.18.0):
+    - Realm (= 3.18.0)
+  - Result (4.1.0)
+  - RMActionController (1.3.1)
+  - RMPickerViewController (2.3.1):
+    - RMActionController (~> 1.3.1)
+  - SwiftLint (0.35.0)
+  - TPPDF (2.3.3)
+
+DEPENDENCIES:
+  - Moya
+  - NewRelicAgent (= 6.11.0)
+  - OktaOidc (= 3.5.1)
+  - Pulley
+  - ReachabilitySwift
+  - RealmSwift
+  - RMPickerViewController (= 2.3.1)
+  - SwiftLint
+  - TPPDF
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Moya
+    - NewRelicAgent
+    - OktaOidc
+    - Pulley
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - Result
+    - RMActionController
+    - RMPickerViewController
+    - SwiftLint
+    - TPPDF
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  NewRelicAgent: 24f83ea0d59c60da66ead225089523697da1aa18
+  OktaOidc: 1679c2c0a04d76f8463ae3332161c731fd58d3bf
+  Pulley: a4c28c930958f42978d69631000bc1abb82cb232
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  Realm: 7b3d04740facf45e958a514b466a32b04f1113d6
+  RealmSwift: c817b5f374668cf08f649afb05f55d92a787649c
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RMActionController: 535715be9f3d9eb96a838485370dcccee0dda597
+  RMPickerViewController: 4398994985b34d92f3f3e12f535ac0199f2937d4
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+  TPPDF: d8d4d8e47f3ac73a27e3fe26ede167a8c6c0a73b
+
+PODFILE CHECKSUM: ffa221c1bc58e34f7ca6f6e4cf7a8f47c32e96f7
+
+COCOAPODS: 1.10.1

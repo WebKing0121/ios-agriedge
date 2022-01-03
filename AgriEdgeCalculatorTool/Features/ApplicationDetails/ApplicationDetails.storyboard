@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="co4-dk-QWq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New CP Application-->
+        <scene sceneID="H68-7T-4sO">
+            <objects>
+                <viewController id="bqW-d8-Dvb" customClass="ApplicationDetailsViewController" customModule="AgriEdgeCalculatorTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JYK-8c-k0x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96862745100000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="lB4-f1-Vpy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New CP Application" id="GNf-h6-hSp">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Ohi-vo-Iap">
+                            <color key="tintColor" red="0.0" green="0.52549019610000003" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="cancelApplication:" destination="bqW-d8-Dvb" id="FQa-DN-dk8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Delete" id="oTx-Qv-y06">
+                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="deleteApplication:" destination="bqW-d8-Dvb" id="WGn-4I-sCU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="deleteApplicationButton" destination="oTx-Qv-y06" id="Hwq-Lh-ZyZ"/>
+                        <segue destination="FS1-0Y-FYn" kind="unwind" identifier="unwindToPlanDetailsViewController" unwindAction="unwindToPlanDetailsViewController:" id="sU1-OD-kMy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grG-fJ-FZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="FS1-0Y-FYn" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5900.0000000000009" y="10.714285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7yj-YU-d8z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="co4-dk-QWq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NTG-g7-Slp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bqW-d8-Dvb" kind="relationship" relationship="rootViewController" id="ILU-uo-Bbz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgL-yH-uxt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4989.8550724637689" y="10.714285714285714"/>
+        </scene>
+    </scenes>
+</document>

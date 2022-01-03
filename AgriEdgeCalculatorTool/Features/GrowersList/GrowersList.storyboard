@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XbT-uS-eDb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GrowerDetails-->
+        <scene sceneID="4cT-1c-hiy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GrowerDetails" id="1Do-NM-Fmk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="899-Rs-5cT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3500" y="-597"/>
+        </scene>
+        <!--AgriEdge Calculator Tool-->
+        <scene sceneID="bkH-Hw-eKs">
+            <objects>
+                <viewController id="2qK-Cm-hlg" customClass="GrowersListViewController" customModule="AgriEdgeCalculatorTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OuY-ew-XDe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6DH-7M-8QI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AgriEdge Calculator Tool" id="cdc-yH-K7n">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" image="threeDotsIcon" id="Q8w-f8-UKP">
+                            <color key="tintColor" red="0.0" green="0.52549019610000003" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="hUK-vU-wei" kind="presentation" identifier="SettingsSegue" modalPresentationStyle="fullScreen" id="Y8A-rs-2jW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="1Do-NM-Fmk" kind="presentation" identifier="GrowerDetailsSegue" modalPresentationStyle="fullScreen" id="L4y-Jo-URQ"/>
+                        <segue destination="G0R-Cp-kZC" kind="show" identifier="GrowerProfileSegue" id="rZL-9y-MVu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GC-Bc-KZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2766.666666666667" y="-611.38392857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vwx-R8-lAP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XbT-uS-eDb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CKA-SE-g8d">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2qK-Cm-hlg" kind="relationship" relationship="rootViewController" id="ULr-j4-Z02"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95z-wZ-4br" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1856.521739130435" y="-611.38392857142856"/>
+        </scene>
+        <!--GrowerProfile-->
+        <scene sceneID="htO-36-xb0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GrowerProfile" id="G0R-Cp-kZC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grH-bQ-Vyw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3499" y="-490"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="tGC-g5-Hir">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="hUK-vU-wei" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwv-i6-ALC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3475" y="-730"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="threeDotsIcon" width="48" height="48"/>
+    </resources>
+</document>

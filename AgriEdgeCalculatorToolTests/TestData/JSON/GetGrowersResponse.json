@@ -1,0 +1,167 @@
+{
+    "message": "Success",
+    "data": [
+        {
+            "growerID": "48c3baae-a1c6-11e9-966e-f40f240f7e8e",
+            "firstName": "Ted",
+            "lastName": "Kanz",
+            "zoneID": "e357ef36-99dd-11e9-86d9-f40f240f7e8e",
+            "farmName": "Ted's Farm",
+            "source": 1,
+            "email": "tedkanz@gmail.com",
+            "phoneNumber": "(777)777-7777",
+            "userID": "48c3b7c0-a1c6-11e9-966e-f40f240f7e8e",
+            "crops": [
+                {
+                    "cropID": "bc83d038-a1a2-11e9-b8f5-f40f240f7e8e",
+                    "plantedAcreage": 2000
+                },
+                {
+                    "cropID": "bc83e474-a1a2-11e9-b8f5-f40f240f7e8e",
+                    "plantedAcreage": 1000
+                }
+            ],
+            "plans": [
+                {
+                    "planID": "7F2DC62C-9B43-4BD5-A866-FBDA8E75DCE2",
+                    "cropYear": "2020",
+                    "rebate": {
+                        "estimatedRebateTotal": "$0.00",
+                        "tenNinetyCropsurance": "$23,766.84",
+                        "estimatedSpend": "$15,750.00",
+                        "estimatedSpendPerAcre": "$10.50",
+                        "fiftyFiftyTarget": "$38,026.94",
+                        "capRiskManagement": "$45,632.33",
+                        "rebateID": "C5335605-5F17-4F1A-B1F7-0DAC4CCE7FCC"
+                    },
+                    "displayName": "My Great Plan4",
+                    "growerID": "48c3baae-a1c6-11e9-966e-f40f240f7e8e",
+                    "applications": [
+                        {
+                            "applicationID": "25A38C34-E999-4E5C-848C-056D64DA2ECK",
+                            "cropID": "867a5dae-9da1-11e9-bf50-f40f240f7e8e",
+                            "productID": "98773a52-a348-11e9-a4da-f40f240f7e8e",
+                            "appliedAcreage": "900",
+                            "appliedUoM": "ounces",
+                            "appliedRate": "6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "growerID": "f50316d4-99d8-11e9-86d9-f40f240f7e8e",
+            "firstName": "John",
+            "lastName": "Doe",
+            "zoneID": "e357eebe-99dd-11e9-86d9-f40f240f7e8e",
+            "farmName": "John's Farm",
+            "source": 2,
+            "email": "johndow@gmail.com",
+            "phoneNumber": "(555)555-5555",
+            "userID": "48c3b7c0-a1c6-11e9-966e-f40f240f7e8e",
+            "crops": [
+                {
+                    "cropID": "bc83e7bc-a1a2-11e9-b8f5-f40f240f7e8e",
+                    "plantedAcreage": 1000
+                },
+                {
+                    "cropID": "bc83de02-a1a2-11e9-b8f5-f40f240f7e8e",
+                    "plantedAcreage": 500
+                },
+                {
+                    "cropID": "bc83d484-a1a2-11e9-b8f5-f40f240f7e8e",
+                    "plantedAcreage": 1234
+                },
+                {
+                    "cropID": "bc83c6a6-a1a2-11e9-b8f5-f40f240f7e8e",
+                    "plantedAcreage": 876
+                }
+            ],
+            "plans": [
+                {
+                    "planID": "7F2DC62C-9B43-4BD5-A866-FBDA8E75DCE7",
+                    "cropYear": "2020",
+                    "rebate": {
+                        "estimatedRebateTotal": "$0.00",
+                        "tenNinetyCropsurance": "$23,766.84",
+                        "estimatedSpend": "$15,750.00",
+                        "estimatedSpendPerAcre": "$10.50",
+                        "fiftyFiftyTarget": "$38,026.94",
+                        "capRiskManagement": "$45,632.33",
+                        "rebateID": "C5335605-5F17-4F1A-B1F7-0DAC4CCE7FCd"
+                    },
+                    "displayName": "My Great Plan1",
+                    "growerID": "f50316d4-99d8-11e9-86d9-f40f240f7e8e",
+                    "applications": [
+                        {
+                            "applicationID": "163CF7CF-EE8D-47E5-B4F2-821D6A246200",
+                            "cropID": "2e4fbbf8-9921-11e9-b6d2-f40f240f7e8e",
+                            "productID": "98773a52-a348-11e9-a4da-f40f240f7e8e",
+                            "appliedAcreage": "3000",
+                            "appliedUoM": "ounces",
+                            "appliedRate": "4"
+                        }
+                    ]
+                },
+                {
+                    "planID": "7F2DC62C-9B43-4BD5-A866-FBDA8E75DCE8",
+                    "cropYear": "2019",
+                    "rebate": {
+                        "estimatedRebateTotal": "$0.00",
+                        "tenNinetyCropsurance": "$23,766.84",
+                        "estimatedSpend": "$15,750.00",
+                        "estimatedSpendPerAcre": "$10.50",
+                        "fiftyFiftyTarget": "$38,026.94",
+                        "capRiskManagement": "$45,632.33",
+                        "rebateID": "C5335605-5F17-4F1A-B1F7-0DAC4CCE7FCe"
+                    },
+                    "displayName": "My Great Plan2",
+                    "growerID": "f50316d4-99d8-11e9-86d9-f40f240f7e8e",
+                    "applications": [
+                        {
+                            "applicationID": "25A38C34-E999-4E5C-848C-056D64DA2ECF",
+                            "cropID": "2e4fbb58-9921-11e9-b6d2-f40f240f7e8e",
+                            "productID": "98773a52-a348-11e9-a4da-f40f240f7e8e",
+                            "appliedAcreage": "1000",
+                            "appliedUoM": "ounces",
+                            "appliedRate": "5"
+                        }
+                    ]
+                },
+                {
+                    "planID": "7F2DC62C-9B43-4BD5-A866-FBDA8E75DCE9",
+                    "cropYear": "2020",
+                    "rebate": {
+                        "estimatedRebateTotal": "$0.00",
+                        "tenNinetyCropsurance": "$23,766.84",
+                        "estimatedSpend": "$15,750.00",
+                        "estimatedSpendPerAcre": "$10.50",
+                        "fiftyFiftyTarget": "$38,026.94",
+                        "capRiskManagement": "$45,632.33",
+                        "rebateID": "C5335605-5F17-4F1A-B1F7-0DAC4CCE7FCf"
+                    },
+                    "displayName": "My Great Plan3",
+                    "growerID": "f50316d4-99d8-11e9-86d9-f40f240f7e8e",
+                    "applications": [
+                        {
+                            "applicationID": "25A38C34-E999-4E5C-848C-056D64DA2ECH",
+                            "cropID": "867a4fe4-9da1-11e9-bf50-f40f240f7e8e",
+                            "productID": "98773a52-a348-11e9-a4da-f40f240f7e8e",
+                            "appliedAcreage": "1800",
+                            "appliedUoM": "ounces",
+                            "appliedRate": "3"
+                        },
+                        {
+                            "applicationID": "25A38C34-E999-4E5C-848C-056D64DA2ECL",
+                            "cropID": "867a5dae-9da1-11e9-bf50-f40f240f7e8e",
+                            "productID": "98773a52-a348-11e9-a4da-f40f240f7e8e",
+                            "appliedAcreage": "900",
+                            "appliedUoM": "ounces",
+                            "appliedRate": "6"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

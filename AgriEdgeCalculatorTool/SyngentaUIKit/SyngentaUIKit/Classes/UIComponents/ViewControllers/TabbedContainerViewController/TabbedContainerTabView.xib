@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TabbedContainerTabView" customModule="Pods_SyngentaUIKit_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="95" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0o-C2-5X3">
+                    <rect key="frame" x="0.0" y="0.0" width="95" height="40"/>
+                    <color key="backgroundColor" name="tableSectionHeaderBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" name="secondaryInkColor"/>
+                    </state>
+                    <connections>
+                        <action selector="selectTab:" destination="iN0-l3-epB" eventType="touchUpInside" id="BFz-Mn-lyy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" name="tableSectionHeaderBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="h0o-C2-5X3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1yy-3O-X2H"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="h0o-C2-5X3" secondAttribute="bottom" id="b8O-vL-Cn4"/>
+                <constraint firstAttribute="trailing" secondItem="h0o-C2-5X3" secondAttribute="trailing" id="eHA-NN-yxf"/>
+                <constraint firstItem="h0o-C2-5X3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rjk-Tu-0Tg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="tabButton" destination="h0o-C2-5X3" id="7O1-TB-T3k"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="187"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="secondaryInkColor">
+            <color red="0.36078431372549019" green="0.396078431372549" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tableSectionHeaderBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

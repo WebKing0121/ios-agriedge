@@ -1,0 +1,12 @@
+${PODS_ROOT}/Target Support Files/Pods-AgriEdgeCalculatorTool/Pods-AgriEdgeCalculatorTool-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
+${BUILT_PRODUCTS_DIR}/OktaOidc/OktaOidc.framework
+${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework
+${BUILT_PRODUCTS_DIR}/RMActionController/RMActionController.framework
+${BUILT_PRODUCTS_DIR}/RMPickerViewController/RMPickerViewController.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/Result/Result.framework
+${BUILT_PRODUCTS_DIR}/TPPDF/TPPDF.framework

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gHO-gb-W00" customClass="TableSectionHeaderView" customModule="Pods_SyngentaUIKit_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gcp-YK-qTQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" name="tableSectionHeaderBackgroundColor"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hKZ-np-pLx">
+                    <rect key="frame" x="16" y="13.5" width="43.5" height="37"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rt-cg-eSi">
+                            <rect key="frame" x="0.0" y="0.0" width="43.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <color key="textColor" name="primaryInkColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a7-Yw-8Pr">
+                            <rect key="frame" x="0.0" y="22.5" width="43.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" name="secondaryInkColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAE-kf-ADo">
+                    <rect key="frame" x="0.0" y="63" width="375" height="1"/>
+                    <color key="backgroundColor" name="cellSeparatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Obo-Gp-QBG"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gkK-FG-cDr">
+                    <rect key="frame" x="231" y="0.0" width="128" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxG-SC-BAN">
+                            <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hxG-SC-BAN" secondAttribute="height" multiplier="1:1" id="c4v-Rf-QqI"/>
+                            </constraints>
+                            <color key="tintColor" red="0.0" green="0.41960784309999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" image="minusIcon"/>
+                            <connections>
+                                <action selector="tapMinusButton:" destination="gHO-gb-W00" eventType="touchUpInside" id="znu-Qh-vhY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcD-tB-mUh">
+                            <rect key="frame" x="64" y="0.0" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="HcD-tB-mUh" secondAttribute="height" id="tst-v4-605"/>
+                            </constraints>
+                            <color key="tintColor" red="0.0" green="0.41960784309999999" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                            <state key="normal" image="plusIcon"/>
+                            <connections>
+                                <action selector="tapPlusButton:" destination="gHO-gb-W00" eventType="touchUpInside" id="Z8t-u2-fYw"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="HcD-tB-mUh" firstAttribute="height" secondItem="gkK-FG-cDr" secondAttribute="height" id="815-vD-42i"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gAE-kf-ADo" secondAttribute="bottom" id="5eD-p1-5Cc"/>
+                <constraint firstItem="hA0-dg-2Re" firstAttribute="trailing" secondItem="gkK-FG-cDr" secondAttribute="trailing" constant="16" id="9yy-tq-DKm"/>
+                <constraint firstAttribute="bottom" secondItem="gkK-FG-cDr" secondAttribute="bottom" id="AG3-Pv-fL7"/>
+                <constraint firstItem="Gcp-YK-qTQ" firstAttribute="leading" secondItem="gHO-gb-W00" secondAttribute="leading" id="C9H-bK-eRj"/>
+                <constraint firstItem="hxG-SC-BAN" firstAttribute="height" secondItem="gHO-gb-W00" secondAttribute="height" id="Eao-4B-hbY"/>
+                <constraint firstAttribute="bottom" secondItem="Gcp-YK-qTQ" secondAttribute="bottom" id="Fzi-eJ-6gh"/>
+                <constraint firstItem="hKZ-np-pLx" firstAttribute="centerY" secondItem="gHO-gb-W00" secondAttribute="centerY" id="Mro-do-5AX"/>
+                <constraint firstAttribute="trailing" secondItem="gAE-kf-ADo" secondAttribute="trailing" id="OmB-uB-Dqk"/>
+                <constraint firstItem="gkK-FG-cDr" firstAttribute="top" secondItem="gHO-gb-W00" secondAttribute="top" id="S6W-Qe-baP"/>
+                <constraint firstItem="gAE-kf-ADo" firstAttribute="leading" secondItem="gHO-gb-W00" secondAttribute="leading" id="UI4-Ip-C2w"/>
+                <constraint firstAttribute="trailing" secondItem="Gcp-YK-qTQ" secondAttribute="trailing" id="VAa-9I-PaX"/>
+                <constraint firstItem="Gcp-YK-qTQ" firstAttribute="top" secondItem="gHO-gb-W00" secondAttribute="top" id="q2I-5H-k04"/>
+                <constraint firstItem="hKZ-np-pLx" firstAttribute="leading" secondItem="hA0-dg-2Re" secondAttribute="leading" constant="16" id="yt0-lH-6Qx"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="hA0-dg-2Re"/>
+            <connections>
+                <outlet property="minusButton" destination="hxG-SC-BAN" id="EO9-cH-tfO"/>
+                <outlet property="plusButton" destination="HcD-tB-mUh" id="5op-wN-XFo"/>
+                <outlet property="separatorView" destination="gAE-kf-ADo" id="D5p-FO-TTJ"/>
+                <outlet property="subtitleLabel" destination="8a7-Yw-8Pr" id="B4Q-v7-c5a"/>
+                <outlet property="titleLabel" destination="1rt-cg-eSi" id="Olw-Em-xKI"/>
+            </connections>
+            <point key="canvasLocation" x="-144" y="-798"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="minusIcon" width="48" height="48"/>
+        <image name="plusIcon" width="48" height="48"/>
+        <namedColor name="cellSeparatorColor">
+            <color red="0.875" green="0.88599997758865356" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryInkColor">
+            <color red="0.090196078431372548" green="0.10588235294117647" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryInkColor">
+            <color red="0.36078431372549019" green="0.396078431372549" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tableSectionHeaderBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

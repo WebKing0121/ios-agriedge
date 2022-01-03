@@ -1,0 +1,32 @@
+stages:
+  - lint
+  - test
+
+variables:
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
+  GIT_STRATEGY: clone
+
+before_script:
+  - bundle exec pod install
+  - bundle exec pod repo update
+
+lint:
+  tags:
+    - iOS
+  stage: lint
+  script:
+    - bundle install
+    - bundle exec fastlane lint
+  artifacts:
+    paths:
+      - fastlane/swiftlint.html
+
+
+test:
+  tags:
+    - iOS
+  stage: test
+  script:
+    - bundle install
+    - bundle exec fastlane test

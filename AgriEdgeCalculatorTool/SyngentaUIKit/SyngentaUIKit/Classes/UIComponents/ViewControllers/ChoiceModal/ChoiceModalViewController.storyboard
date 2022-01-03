@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p7b-8V-E1i">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choice Modal View Controller-->
+        <scene sceneID="Nsb-EI-xMQ">
+            <objects>
+                <viewController storyboardIdentifier="ChoiceModalViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="p7b-8V-E1i" customClass="ChoiceModalViewController" customModule="AgriEdgeCalculatorTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3N4-cQ-FXO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09l-VA-oYO">
+                                <rect key="frame" x="35.5" y="385" width="343" height="126.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dcH-n0-K0V">
+                                        <rect key="frame" x="16" y="16" width="311" height="94.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Axp-eE-yfn">
+                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="38.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeF-v0-vY5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcW-PP-9aQ">
+                                                        <rect key="frame" x="0.0" y="22.5" width="83.5" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BcX-EU-WrS">
+                                                <rect key="frame" x="0.0" y="54.5" width="311" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psf-hH-KHa" customClass="StyledButton" customModule="AgriEdgeCalculatorTool" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="311" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="YSO-lu-K4j"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <state key="normal" title="Close"/>
+                                                        <connections>
+                                                            <action selector="close:" destination="p7b-8V-E1i" eventType="touchUpInside" id="RfS-hE-sa0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="BcX-EU-WrS" secondAttribute="trailing" id="F79-9h-Gax"/>
+                                            <constraint firstItem="BcX-EU-WrS" firstAttribute="leading" secondItem="dcH-n0-K0V" secondAttribute="leading" id="iam-Pr-7Sz"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="tableSectionHeaderBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dcH-n0-K0V" firstAttribute="leading" secondItem="09l-VA-oYO" secondAttribute="leading" constant="16" id="47H-Qt-5yR"/>
+                                    <constraint firstAttribute="bottom" secondItem="dcH-n0-K0V" secondAttribute="bottom" constant="16" id="6KG-gw-xOf"/>
+                                    <constraint firstItem="dcH-n0-K0V" firstAttribute="centerY" secondItem="09l-VA-oYO" secondAttribute="centerY" id="ANY-hb-Uie"/>
+                                    <constraint firstAttribute="trailing" secondItem="dcH-n0-K0V" secondAttribute="trailing" constant="16" id="RWP-uo-pq1"/>
+                                    <constraint firstItem="dcH-n0-K0V" firstAttribute="centerX" secondItem="09l-VA-oYO" secondAttribute="centerX" id="S05-AH-0I7"/>
+                                    <constraint firstItem="dcH-n0-K0V" firstAttribute="top" secondItem="09l-VA-oYO" secondAttribute="top" constant="16" id="etM-yL-HWt"/>
+                                    <constraint firstAttribute="width" constant="343" id="k8V-SO-y9W"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="09l-VA-oYO" firstAttribute="centerX" secondItem="3N4-cQ-FXO" secondAttribute="centerX" id="eb1-J8-JK3"/>
+                            <constraint firstItem="09l-VA-oYO" firstAttribute="centerY" secondItem="3N4-cQ-FXO" secondAttribute="centerY" id="joy-we-DvR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xJd-xG-Kpr"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonStackView" destination="BcX-EU-WrS" id="hA7-U7-A35"/>
+                        <outlet property="closeButton" destination="Psf-hH-KHa" id="v85-Fu-DAZ"/>
+                        <outlet property="modalView" destination="09l-VA-oYO" id="Z4j-tn-09z"/>
+                        <outlet property="subtitleLabel" destination="vcW-PP-9aQ" id="SwU-hQ-X4X"/>
+                        <outlet property="titleLabel" destination="aeF-v0-vY5" id="uGS-F0-WtC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVw-nh-ucb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="tableSectionHeaderBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

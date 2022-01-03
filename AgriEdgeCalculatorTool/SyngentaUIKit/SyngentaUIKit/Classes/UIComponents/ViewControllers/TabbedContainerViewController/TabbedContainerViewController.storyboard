@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bbR-5Q-16G">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tabbed Container View Controller-->
+        <scene sceneID="wEw-wv-d03">
+            <objects>
+                <viewController storyboardIdentifier="TabbedContainerViewController" id="JP1-MD-JOs" customClass="TabbedContainerViewController" customModule="Pods_SyngentaUIKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xr6-ED-vwa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rtk-Ng-lhr">
+                                <rect key="frame" x="0.0" y="128" width="414" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDU-KS-q0K">
+                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dLc-bi-lE6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+                                        <color key="backgroundColor" name="tableSectionHeaderBackgroundColor"/>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCL-tb-KCJ">
+                                        <rect key="frame" x="0.0" y="39" width="414" height="1"/>
+                                        <color key="backgroundColor" name="neutral-500"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="TSo-Ik-8ZG"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aU5-r5-Iqu">
+                                        <rect key="frame" x="0.0" y="38" width="414" height="2"/>
+                                        <color key="backgroundColor" name="tealIndicatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="Rwd-CV-7zF"/>
+                                            <constraint firstAttribute="width" constant="414" id="oSp-Q1-DTq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="tableSectionHeaderBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="aU5-r5-Iqu" secondAttribute="bottom" id="0N3-OO-RqL"/>
+                                    <constraint firstAttribute="trailing" secondItem="dLc-bi-lE6" secondAttribute="trailing" id="1pR-PX-niD"/>
+                                    <constraint firstItem="dLc-bi-lE6" firstAttribute="top" secondItem="ZDU-KS-q0K" secondAttribute="top" id="4DW-xg-1LA"/>
+                                    <constraint firstAttribute="bottom" secondItem="dLc-bi-lE6" secondAttribute="bottom" constant="2" id="94x-Qn-BbH"/>
+                                    <constraint firstItem="dLc-bi-lE6" firstAttribute="leading" secondItem="ZDU-KS-q0K" secondAttribute="leading" id="Jb6-g4-Lqe"/>
+                                    <constraint firstAttribute="trailing" secondItem="uCL-tb-KCJ" secondAttribute="trailing" id="Min-fR-skd"/>
+                                    <constraint firstAttribute="bottom" secondItem="uCL-tb-KCJ" secondAttribute="bottom" id="XZu-g5-jKG"/>
+                                    <constraint firstItem="uCL-tb-KCJ" firstAttribute="leading" secondItem="ZDU-KS-q0K" secondAttribute="leading" id="ehb-xo-wlX"/>
+                                    <constraint firstItem="aU5-r5-Iqu" firstAttribute="leading" secondItem="ZDU-KS-q0K" secondAttribute="leading" id="nfS-Lo-Ldk"/>
+                                    <constraint firstAttribute="height" constant="40" id="tmK-iV-W78"/>
+                                    <constraint firstItem="aU5-r5-Iqu" firstAttribute="top" secondItem="dLc-bi-lE6" secondAttribute="bottom" id="yOV-BU-L5H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rtk-Ng-lhr" firstAttribute="leading" secondItem="W9f-Zr-i4h" secondAttribute="leading" id="0fa-Xp-rpb"/>
+                            <constraint firstItem="W9f-Zr-i4h" firstAttribute="trailing" secondItem="Rtk-Ng-lhr" secondAttribute="trailing" id="4rU-Ye-lwd"/>
+                            <constraint firstItem="Rtk-Ng-lhr" firstAttribute="bottom" secondItem="Xr6-ED-vwa" secondAttribute="bottom" id="6dx-bi-eQY"/>
+                            <constraint firstItem="ZDU-KS-q0K" firstAttribute="top" secondItem="W9f-Zr-i4h" secondAttribute="top" id="CG3-vx-VDr"/>
+                            <constraint firstItem="ZDU-KS-q0K" firstAttribute="trailing" secondItem="W9f-Zr-i4h" secondAttribute="trailing" id="Q6T-7N-d1z"/>
+                            <constraint firstItem="Rtk-Ng-lhr" firstAttribute="top" secondItem="ZDU-KS-q0K" secondAttribute="bottom" id="TpH-wo-dOL"/>
+                            <constraint firstItem="ZDU-KS-q0K" firstAttribute="leading" secondItem="W9f-Zr-i4h" secondAttribute="leading" id="pSu-ZX-3pj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W9f-Zr-i4h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bsd-4p-BKV"/>
+                    <connections>
+                        <outlet property="tabContainerStackView" destination="dLc-bi-lE6" id="nik-zR-Qwv"/>
+                        <outlet property="tabContainerView" destination="ZDU-KS-q0K" id="kON-DM-tQS"/>
+                        <outlet property="tabIndicatorLeadingConstraint" destination="nfS-Lo-Ldk" id="0Jo-fu-QED"/>
+                        <outlet property="tabIndicatorView" destination="aU5-r5-Iqu" id="MPR-gQ-Zib"/>
+                        <outlet property="tabIndicatorWidthConstraint" destination="oSp-Q1-DTq" id="Ed1-ip-Ikz"/>
+                        <outlet property="viewControllerContainerView" destination="Rtk-Ng-lhr" id="3mC-L6-b59"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5YM-i7-MDz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.304347826087" y="-213.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6eJ-rY-YqS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bbR-5Q-16G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sHB-s9-O0e">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JP1-MD-JOs" kind="relationship" relationship="rootViewController" id="HyY-y4-MFc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIg-Tu-Dc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.159420289855078" y="-213.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="neutral-500">
+            <color red="0.875" green="0.88599997758865356" blue="0.90600001811981201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tableSectionHeaderBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tealIndicatorColor">
+            <color red="0.13699999451637268" green="0.52499997615814209" blue="0.37999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
